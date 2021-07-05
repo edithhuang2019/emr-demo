@@ -12,3 +12,6 @@ aws configure set region \
 
 # install some useful python packages
 sudo python3 -m pip install boto3 ec2-metadata
+python3 ./ scripts/ create_cfn_stack.py \ 
+    --environment dev \ 
+    --ec2-key-name <emr-demo-keypair>
